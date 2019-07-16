@@ -6,7 +6,6 @@
 
 html, body {
 	height: 100%;
-
 }
 
 body, #page {
@@ -253,6 +252,40 @@ a {
 	visibility: visible;
 }
 
+
+/* new */
+
+.mono {
+    font-family: "Courier New", Courier, monospaced;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.mono a {
+    color: #F00;
+    text-decoration: none;
+}
+
+.practicalContainer {
+    position: absolute;
+    z-index: 90;
+    top: 10px;
+    left: 20px;
+    width: 190px;
+}
+
+.mc-field-group label {
+    display: none;
+}
+
+.mc-field-group {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+
 @media screen and (max-width: 1000px) {
   .container {
   }
@@ -282,6 +315,4 @@ a {
     right: 0;
     padding: 15px;
   }
-
-
 }

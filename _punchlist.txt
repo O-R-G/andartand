@@ -1,0 +1,3 @@
+- build out .css based on previous site
++ populate remaining contents
+- use views/program for calendar

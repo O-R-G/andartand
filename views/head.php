@@ -42,4 +42,6 @@ $media = $oo->media($item['id']);
 		<link rel="apple-touch-icon" href="<? echo $host; ?>media/png/touchicon.png" />
 		<script src="static/js/analytics.js"></script>
 	</head>
-<body>
+<body class='mono'>
+    <center><a href='/'>THE ART REPORT</a></center>
+
