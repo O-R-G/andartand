@@ -34,7 +34,7 @@ $media = $oo->media($item['id']);
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?if ($uu->id) { echo $item['name1'] . ' - '; }?>KURA.</title>
+		<title><?if ($uu->id) { echo $item['name1'] . ' - '; }?>THE ART REPORT</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="<? echo $host; ?>static/fonts/ocrb/ocrb.css">

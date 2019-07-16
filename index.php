@@ -11,6 +11,7 @@ $view = "views/";
 
 // show the things
 require_once("views/head.php");
+// require_once("views/subscribe.php");
 
 if ($uri[1] == "program" && $uri[2])
   require_once("views/program.php");
@@ -21,6 +22,5 @@ else if ($uri[1])
 else
   require_once("views/home.php");
 
-require_once("views/logo.php");
 require_once("views/foot.php");
 ?>
