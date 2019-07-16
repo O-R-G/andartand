@@ -43,5 +43,3 @@ $media = $oo->media($item['id']);
 		<script src="static/js/analytics.js"></script>
 	</head>
 <body class='mono'>
-    <center><a href='/'>THE ART REPORT</a></center>
-

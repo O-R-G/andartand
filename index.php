@@ -11,6 +11,7 @@ $view = "views/";
 
 // show the things
 require_once("views/head.php");
+require_once("views/title.php");
 // require_once("views/subscribe.php");
 
 if ($uri[1] == "program" && $uri[2])

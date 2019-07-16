@@ -91,6 +91,14 @@ a {
   opacity: 0.5;
 }
 
+#title {
+    position: fixed;
+    top: 15px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
 #logo {
   width: 180px;
   height: 180px;
@@ -99,6 +107,28 @@ a {
   bottom: 0;
   right: 0;
   padding: 15px;
+}
+
+#left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+}
+
+#center {
+    position: absolute;
+    top: 15px;
+    padding: 15px;
+    left: 25%;
+    width: 50%;
+}
+
+#right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25%;
 }
 
 .container {
@@ -112,8 +142,15 @@ a {
 }
 
 .content .page-title {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
+
+.content .page-title::before { 
+    /* content: "× "; */
+    content: "- ";
+    color: #000;
+}
+
 
 .content-program {
   margin-bottom: 1em;
@@ -284,9 +321,9 @@ a {
     margin-bottom: 8px;
 }
 
+/* phone */
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .container {
   }
 
