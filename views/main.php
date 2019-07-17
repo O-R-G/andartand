@@ -1,7 +1,9 @@
-<div id="left" class="container">
-  <div class="content">
-    <a href="javascript:history.back()"><div class="page-title full"><?= $item['name1']; ?></div></a>
-    <div><br></div>
-    <?= $item['body']; ?>
-  </div>
+<div id="center" class="container">
+    <div class="content" id="home"><?            
+        $home_id = 1;
+        $media_home = $oo->media($home_id);
+        foreach($media_home as $key=>$m) {
+            ?><img class="media-home" src="/<?= m_url($m); ?>"><?
+        }
+    ?></div>
 </div>

@@ -1,13 +1,16 @@
 <?
+/*
   // chronological sort
+    // also declared in views/calendar
   function date_sort($a, $b) {
     return strtotime($a['begin']) - strtotime($b['begin']);
   }
+*/
 
   $children = $oo->children($root);
   foreach($children as $child) {
     $name =  strtolower($child["name1"]);
-    if ($name == "program") {
+    if ($name == "calendar") {
       $programObj = $child;
       break;
     }
@@ -23,35 +26,38 @@
     }
   }
 ?>
-
-<div class="container" id="containerBox">
-  <div class="content">
-    <a href="javascript:history.back()"><div class="blink sticky full"><?= $key ?></div></a>
-    <div class="page-title"><?= $item['name1']; ?></div>
+  
+<div class="content-detail">
+    <a href="/">
+        <div class="page-title"><?
+            echo date('m/j/y', strtotime($item['begin'])) . " " . $item['name1'];
+        ?></div>
+    </a>
     <div><?= $item['deck']; ?></div>
     <? if (date('y', strtotime($item['begin'])) != date('y', strtotime($item['end']))) :?>
-      <div><?= date('j.m.y', strtotime($item['begin'])) ?> &ndash; <?= date('j.m.y', strtotime($item['end'])) ?></div>
+      <div><?= date('F j, Y', strtotime($item['begin'])) ?> &ndash; <?= date('F j, Y', strtotime($item['end'])) ?></div>
     <? else: ?>
-      <div><?= date('j.m', strtotime($item['begin'])) ?> &ndash; <?= date('j.m.y', strtotime($item['end'])) ?></div>
+      <div><?= date('F j', strtotime($item['begin'])) ?> &ndash; <?= date('F j, Y', strtotime($item['end'])) ?></div>
     <? endif; ?>
     <div><br></div>
-    <?= $item['body']; ?>
+    <?= $item['body']; ?><?
 
-    <div class="media">
-      <? foreach($media as $key=>$m): ?>
-        <div class="media-item">
-          <? if ($m['caption'] == "__blur__"): ?>
-            <div class="media-image click blur" data-index="<?= $key; ?>"><img src="<?= m_url($m); ?>"></div>
-            <div class="media-caption"></div>
-          <? else: ?>
-            <div class="media-image click" data-index="<?= $key; ?>"><img src="<?= m_url($m); ?>"></div>
-            <div class="media-caption"><?= $m['caption']; ?></div>
-          <? endif; ?>
-        </div>
-      <? endforeach; ?>
-    </div>
-  </div>
-</div>
+    if ($media) {
+        ?><div class="media">
+            <? foreach($media as $key=>$m): ?>
+                <div class="media-item">
+                    <? if ($m['caption'] == "__blur__"): ?>
+                        <div class="media-image click blur" data-index="<?= $key; ?>"><img src="<?= m_url($m); ?>"></div>
+                        <div class="media-caption"></div>
+                    <? else: ?>
+                        <div class="media-image click" data-index="<?= $key; ?>"><img src="<?= m_url($m); ?>"></div>
+                        <div class="media-caption"><?= $m['caption']; ?></div>
+                    <? endif; ?>
+                </div>
+            <? endforeach; ?>
+        </div><?
+    }
+?></div>
 
 <div class="gallery" id="galleryBox">
   <div id="left-arrow" class="gallery-arrow click"><img src="/static/media/svg/left-arrow.svg"></div>
@@ -69,7 +75,6 @@
     </div>
   <? endforeach; ?>
 </div>
-
 
 <script>
 // if (window.innerWidth > 1000) {

@@ -8,6 +8,7 @@ require_once($config);
 $config_dir = $root."config/";
 require_once($config_dir."url.php");
 require_once($config_dir."request.php");
+date_default_timezone_set("America/Los_Angeles");
 
 $db = db_connect("guest");
 
@@ -20,21 +21,22 @@ $uu = new URL();
 if($uu->id)
 	$item = $oo->get($uu->id);
 else {
-	$children = $oo->children($root);
-  foreach($children as $child) {
-    $name =  strtolower($child["name1"]);
-		if ($name == "home")
-			$item = $child;
+    $children = $oo->children($root);
+    foreach($children as $child) {
+        $name =  strtolower($child["name1"]);
+		if ($name == ".home")
+    	    $item = $child;
 	}
 }
 
 $media = $oo->media($item['id']);
-
 ?>
-<!DOCTYPE html>
+
+<DOCTYPE html>
 <html>
 	<head>
-		<title><?if ($uu->id) { echo $item['name1'] . ' - '; }?>THE ART REPORT</title>
+		<!-- <title><?if ($uu->id) { echo $item['name1'] . ' - '; }?>THE ART REPORT</title> -->
+        <title><?= date("m/j/y H:i:s"); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="<? echo $host; ?>static/fonts/ocrb/ocrb.css">
