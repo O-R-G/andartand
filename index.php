@@ -11,12 +11,14 @@ $view = "views/";
 
 // show the things
 require_once("views/head.php");
-if ($uri[1] == "subscribe") {
-    require_once("views/subscribe.php");    
-}
 require_once("views/title.php");    
 require_once("views/main.php");
-require_once("views/menu.php");
+
+if ($uri[1] == "subscribe") {
+    require_once("views/subscribe.php");    
+} else {
+    require_once("views/menu.php");
+}
 require_once("views/calendar.php");
 require_once("views/foot.php");
 ?>

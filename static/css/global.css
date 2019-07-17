@@ -407,7 +407,7 @@ a {
 
     #right {
         position: relative;
-        top: initial;
+        top: 1em;
         left: initial;
         right: initial;
         width: 100%;
@@ -422,4 +422,12 @@ a {
     right: 0;
     padding: 15px;
   }
+
+.practicalContainer {
+    position: relative;
+    top: 1em;
+    width: 75%;
+    margin-bottom: 100em;
+}
+
 }

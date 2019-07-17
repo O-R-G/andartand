@@ -1,36 +1,4 @@
-<style>
-.mono {
-	font-family: "Courier New", Courier, monospaced;
-	font-size: 14px;
-	line-height: 16px;
-	text-align: left;
-}
-
-.mono a {
-	color: #F00;
-	text-decoration: none;
-}
-
-.practicalContainer {
-	position: absolute;
-	z-index: 90;
-	top: 10px;
-	left: 20px;
-	width: 190px;
-}
-
-.mc-field-group label {
-	display: none;
-}
-
-.mc-field-group {
-	margin-top: 16px;
-	margin-bottom: 8px;
-}
-
-</style>
-<div class='mono'>
-    <center><a href='/'>THE ART REPORT</a></center>
+<div id='left' class='mono'>
     <div class='practicalContainer'>
 	    Subscribe to our mailing list here:
         <!-- Begin Mailchimp Signup Form -->
@@ -51,5 +19,6 @@
             </form>
         </div>        
         <!--End mc_embed_signup-->
+        <a href='/'>< Back</a>
     </div>
 </div>
