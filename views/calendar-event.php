@@ -35,12 +35,6 @@
         ?></div>
     </a>
     <div><?= $item['deck']; ?></div>
-    <? if (date('y', strtotime($item['begin'])) != date('y', strtotime($item['end']))) :?>
-      <div><?= date('F j, Y', strtotime($item['begin'])) ?> &ndash; <?= date('F j, Y', strtotime($item['end'])) ?></div>
-    <? else: ?>
-      <div><?= date('F j', strtotime($item['begin'])) ?> &ndash; <?= date('F j, Y', strtotime($item['end'])) ?></div>
-    <? endif; ?>
-    <div><br></div>
     <?= $item['body']; ?><?
 
     if ($media) {
