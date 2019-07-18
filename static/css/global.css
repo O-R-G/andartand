@@ -97,7 +97,7 @@ a {
     margin: auto;
     width: 100%;
     text-align: center;
-    z-index: 1000;
+    z-index: 100;
 }
 
 #logo {
@@ -130,6 +130,7 @@ a {
     top: 0px;
     right: 0px;
     width: 20%;
+    z-index: 1000;
 }
 
 #date-time {
@@ -195,6 +196,11 @@ a {
     text-indent: -1em;  
 }
 
+.content-ad {
+    margin-top: 20px;
+    max-width: 170px;
+}
+
 #right .page-title {
     /* margin-bottom: initial; */
 }
@@ -215,6 +221,10 @@ a {
 }
 
 .media-home {
+  margin-bottom: 1em;
+}
+
+.media-home .media-caption{
 }
 
 .media-item .media-image {

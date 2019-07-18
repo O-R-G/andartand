@@ -21,6 +21,7 @@
                     ?></div><?
                 }
             }
+	    require_once("views/menu-ad.php");
         ?></div>
     </div>
 </div>

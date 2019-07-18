@@ -4,7 +4,8 @@
 
     // chronological sort
     function date_sort($a, $b) {
-        return strtotime($a['begin']) - strtotime($b['begin']);
+        // return strtotime($a['begin']) - strtotime($b['begin']);
+        return strtotime($b['begin']) - strtotime($a['begin']);
     }
 
     $programming = $oo->children($calendar_id);
@@ -28,7 +29,8 @@
                         } else {
                             ?><a href="/calendar/<?= $program['url'] ?>">
                                 <div class="content-program-title"><?
-                                    echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
+                                    // echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
+                                    echo $program['name1'];
                                 ?></div>
                             </a><?
                         }

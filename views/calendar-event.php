@@ -30,7 +30,8 @@
 <div class="content-detail">
     <a href="/">
         <div class="page-title"><?
-            echo date('m/j/y', strtotime($item['begin'])) . " " . $item['name1'];
+            // echo date('m/j/y', strtotime($item['begin'])) . " " . $item['name1'];
+            echo $item['name1'];
         ?></div>
     </a>
     <div><?= $item['deck']; ?></div>
