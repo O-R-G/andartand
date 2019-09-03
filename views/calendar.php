@@ -36,9 +36,9 @@
                             } else {
                                 ?><a href="/calendar/<?= $program['url'] ?>">
                                     <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
-                                        // echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
+                                        echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
                                         // echo date('m/j/y', strtotime($program['end'])) . " " . $program['name1'];
-                                        echo $program['name1'];
+                                        // echo $program['name1'];
                                     ?></div>
                                 </a><?
                             }
