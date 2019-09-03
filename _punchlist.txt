@@ -1,3 +1,43 @@
 - build out .css based on previous site
 + populate remaining contents
 - use views/program for calendar
+
++ 1. Can we redirect www.andartand.org to www.theartreport.org
+
+- 2. We understand function of site is to expand one item/post at a time, 
+which is perfect, however, noticed when you click a post in the left 
+hand column it collapses everything on the right without further 
+function, can we resolve this? Either allow post in right to remain 
+expanded while expanding post in left, *or* have it as is *but* have the 
+clicked post in left expand on first click.
+
+- 3. ADS! Might need to think this through with you D. Like, is there 
+anyway we can have the ads be HTML text?! perhaps different font (TBD), 
+but that can be clickable (link out to advertiser), and still play with 
+this idea that they *only* hold on screen for allowed time, based on 
+money. Like maybe it's a list of names (advertisers) that fade in and 
+out? Not sure. Thoughts? I like that this would get around AD BLOCKERS 
+;)
+
++ 4. D, what do you think about making posts that are in the past turn 
+*gray*?
+
++ 5. (Micki says): It?s hard for viewers to tell if exhibitions are still 
+ongoing since we only have the exhibition beginning date (and the 
+earlier they start the lower they go, while when events are over, they 
+still hold the same position, which upsets the chronology). How do we 
+solve this? Should we add the end date as well to the title? (Scott): I 
+don't have a solution for this one. D?
+
+- 6. Micki is going to be commissioning new writing from time to time, 
+wondering: could these somehow be featured in the center? Perhaps 
+there's a way to do something large still with image like we are, could 
+this then expand down in the full piece of writing?
+
+- 7. Can we add a link to bios for Contributors? I?m hoping to give them 
+more visibility.
+
+- Other things we're working on, but haven?t resolved on our end: 
+? how to make more clear for reader what is an EX / EV / TXT 
+? considering a header above the right column posts, but Micki and I 
+need to figure this out a bit more?

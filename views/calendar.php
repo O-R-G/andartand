@@ -10,6 +10,9 @@
 
     $programming = $oo->children($calendar_id);
     usort($programming, "date_sort");
+
+    // exact format for date string comparison
+    $now = date('Y-m-d H:i:s');
 ?>
 
 <!--
@@ -23,13 +26,17 @@
     <div class="content">
         <div class="content-programming"><?
             foreach ($programming as $key=>$program) {
+                // if end date past, grey
+                $then = date('Y-m-d H:i:s', strtotime($program['end']));
+                $past = ($now > $then) ? true : false; 
                 ?><div class="content-program"><?
                         if ($program['url'] == $item['url']) {
                             require_once("views/calendar-event.php");
                         } else {
                             ?><a href="/calendar/<?= $program['url'] ?>">
-                                <div class="content-program-title"><?
+                                <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
                                     // echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
+                                    // echo date('m/j/y', strtotime($program['end'])) . " " . $program['name1'];
                                     echo $program['name1'];
                                 ?></div>
                             </a><?

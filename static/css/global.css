@@ -360,6 +360,10 @@ a {
     text-decoration: none;
 }
 
+.mono a .grey {
+    color: #333;
+}
+
 .practicalContainer {
     position: absolute;
     z-index: 90;
