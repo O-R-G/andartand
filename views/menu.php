@@ -14,7 +14,7 @@
                         if ($m['url'] == $item['url']) {
                             require_once("views/menu-detail.php");
                         } else {
-                            ?><a href="<?= $m['url'] ?>">
+                            ?><a href="<?= '/' . $m['url'] ?>">
                                 <div class="content-program-title"><?= $m['name1']; ?></div>
                             </a><?
                         }
