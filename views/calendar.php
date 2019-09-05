@@ -30,13 +30,14 @@
                     // if end date past, grey
                     $then = date('Y-m-d H:i:s', strtotime($program['end']));
                     $past = ($now > $then) ? true : false; 
-                    ?><div class="content-program"><?
+                    ?><div class="content-program" target="<?= $program['url'] ?>"><?
                             if ($program['url'] == $item['url']) {
                                 require_once("views/calendar-event.php");
                             } else {
-                                ?><a href="/calendar/<?= $program['url'] ?>">
+                                ?><a href="/calendar/<?= $program['url'] . '#' . $program['url'] ?>">
                                     <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
+                                        echo $program['url'];
                                         // echo date('m/j/y', strtotime($program['end'])) . " " . $program['name1'];
                                         // echo $program['name1'];
                                     ?></div>

@@ -27,7 +27,7 @@
   }
 ?>
   
-<div class="content-detail">
+<div class="content-detail" target="<?= $item['url'] ?>">
     <a href="/">
         <div class="page-title"><?
             // echo date('m/j/y', strtotime($item['begin'])) . " " . $item['name1'];

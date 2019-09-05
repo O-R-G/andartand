@@ -32,7 +32,6 @@ else {
 $media = $oo->media($item['id']);
 ?>
 
-<DOCTYPE html>
 <html>
 	<head>
 		<!-- <title><?if ($uu->id) { echo $item['name1'] . ' - '; }?>THE ART REPORT</title> -->
