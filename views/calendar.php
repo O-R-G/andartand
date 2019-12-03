@@ -13,6 +13,9 @@
 
     // exact format for date string comparison
     $now = date('Y-m-d H:i:s');
+
+    // isolate one event only, hide others
+    $show = isset($_GET["show"]);
 ?>
 
 <!--
@@ -33,7 +36,7 @@
                     ?><div class="content-program" target="<?= $program['url'] ?>"><?
                             if ($program['url'] == $item['url']) {
                                 require_once("views/calendar-event.php");
-                            } else {
+                            } else if (!$show) {
                                 ?><a href="/calendar/<?= $program['url'] . '#' . $program['url'] ?>">
                                     <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
