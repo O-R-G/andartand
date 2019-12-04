@@ -13,6 +13,12 @@
 
     // exact format for date string comparison
     $now = date('Y-m-d H:i:s');
+
+// strip query from string
+// $item_url_clean = strtok($item['url'],"?");
+// die($item_url_clean);
+
+
 ?>
 
 <!--
