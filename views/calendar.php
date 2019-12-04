@@ -13,12 +13,6 @@
 
     // exact format for date string comparison
     $now = date('Y-m-d H:i:s');
-
-// strip query from string
-// $item_url_clean = strtok($item['url'],"?");
-// die($item_url_clean);
-
-
 ?>
 
 <!--
@@ -39,8 +33,7 @@
                     ?><div class="content-program" target="<?= $program['url'] ?>"><?
                             if ($program['url'] == $item['url']) {
                                 require_once("views/calendar-event.php");
-                            // } else if (!$show) {
-                            } else {
+                            } else if (!$show) {
                                 ?><a href="/calendar/<?= $program['url'] ?>?show">
                                     <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
