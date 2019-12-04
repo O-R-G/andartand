@@ -10,9 +10,9 @@ RewriteEngine On
 
 # delete trailing slash (not sure this works)
 # or maybe it works -- but not for directories?
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} (.+)/$
-RewriteRule ^ %1 [L,R=301]
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_URI} (.+)/$
+# RewriteRule ^ %1 [L,R=301]
 
 # remove .php
 # RewriteCond %{REQUEST_FILENAME}.php -f

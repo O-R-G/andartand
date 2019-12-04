@@ -19,8 +19,11 @@ class URL extends URL_Base
 		{
 			$urls = array_slice($urls, 0, $e->getMessage());
 			$ids = $oo->urls_to_ids($urls);
+            /*
+            // need to have non-resolveable urls to allow for query strings
 			if($urls)
 				header("Location: ".$host."/".implode("/", $urls));
+            */
 		}
 		$id = $ids[count($ids)-1];
 		if(!$id)

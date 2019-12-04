@@ -1,19 +1,10 @@
 <?
-/* 
-// original
-$uri = explode('/', $_SERVER['REQUEST_URI']);
-$view = "views/";
-*/
-
-// from ica.art
-// in process
 $request = $_SERVER['REQUEST_URI'];
 $requestclean = strtok($request,"?");
 $uri = explode('/', $requestclean);
-$show = isset($_GET["show"]);   // show one event, hide others
-// if ($show) 
-//    die();
+$show = isset($_GET["show"]);   
 $view = "views/";
+
 
 /* ------------------------------------------------------
         handle url:
