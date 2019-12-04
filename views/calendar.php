@@ -22,20 +22,26 @@
 ?></div>
 -->
 
+<div class="asterisks">
+    * * *<br /><? 
+    date_default_timezone_set("America/Los_Angeles");
+    echo date("m/j/y H:i:s");
+?></div>
+
 <div id="right" class="container">
     <div class="content">
         <div class="content-programming"><?
             foreach ($programming as $key=>$program) {
                 if (substr($program["name1"],0,1) != ".") {
-                    // if end date past, grey
                     $then = date('Y-m-d H:i:s', strtotime($program['end']));
-                    $past = ($now > $then) ? true : false; 
-                    ?><div class="content-program" target="<?= $program['url'] ?>"><?
+                    $is_past = ($now > $then) ? true : false;                    
+                    if (($past && $is_past) || (!$past && !$is_past) || ($only)) {
+                        ?><div class="content-program" target="<?= $program['url'] ?>"><?
                             if ($program['url'] == $item['url']) {
                                 require_once("views/calendar-event.php");
                             } else if (!$only) {
-                                ?><a href="/calendar/<?= $program['url'] ?>">
-                                    <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
+                                ?><a href="/calendar/<?= ($past) ? $program['url'] . '?past' : $program['url'] ?>">
+                                    <div class="content-program-title <?= ($is_past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
                                         echo $program['url'];
                                         // echo date('m/j/y', strtotime($program['end'])) . " " . $program['name1'];
@@ -43,11 +49,19 @@
                                     ?></div>
                                 </a><?
                             }
-                    ?></div><?
+                        ?></div><?
+                    }
                 }
             }
-        ?></div>
-    </div>
+        ?></div><?
+        if ($past || $only) {
+            ?><br /><br />
+            <a href='/calendar'>Current events ...</a><?
+        } else {
+            ?><br /><br />
+            <a href='/calendar?past'>Past events ...</a><?
+        }
+    ?></div>
 </div>
 
 <!--                                

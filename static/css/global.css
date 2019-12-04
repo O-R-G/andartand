@@ -208,6 +208,13 @@ a {
     margin-bottom: initial;
 }
 
+.asterisks {        
+    display: none;
+    margin-top: 2em;        
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    }
+
 .media {
   margin-top: 1em;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -381,6 +388,8 @@ a {
     margin-bottom: 8px;
 }
 
+
+
 /* phone */
 
 @media screen and (max-width: 500px) {
@@ -424,6 +433,10 @@ a {
         left: initial;
         right: initial;
         width: 100%;
+    }
+
+    .asterisks {
+        display: block;
     }
 
   #logo {
