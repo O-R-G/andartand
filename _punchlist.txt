@@ -75,5 +75,5 @@ would be the same for all). See sketch* below. Tried to simulate a
 frozen moment of ads fading in/out, ha, hope it communicates the idea. 
 Typeface/size TBD.
 
-
-
+- redirect http://andartand.org and https://andartand.org to 
+https://theartreport.org
