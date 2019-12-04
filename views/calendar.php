@@ -33,8 +33,8 @@
                     ?><div class="content-program" target="<?= $program['url'] ?>"><?
                             if ($program['url'] == $item['url']) {
                                 require_once("views/calendar-event.php");
-                            } else if (!$show) {
-                                ?><a href="/calendar/<?= $program['url'] ?>?show">
+                            } else if (!$only) {
+                                ?><a href="/calendar/<?= $program['url'] ?>">
                                     <div class="content-program-title <?= ($past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
                                         echo $program['url'];

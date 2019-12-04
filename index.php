@@ -2,7 +2,7 @@
 $request = $_SERVER['REQUEST_URI'];
 $requestclean = strtok($request,"?");
 $uri = explode('/', $requestclean);
-$show = isset($_GET["show"]);   
+$only = isset($_GET["only"]);   
 $view = "views/";
 
 
