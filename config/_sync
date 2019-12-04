@@ -1,0 +1,7 @@
+#!/bin/sh
+# currently not working as needs to be able to myslq remote i think which is set on the server
+# update local database and media from remote
+mysqldump -u main -p3c88f42547ab4a75ec0d4ed18444949b22195822e9e4e24b -h theartreport.org theartreport > /Users/reinfurt/theartreport.mysql
+mysql -u root -p theartreport_local < /Users/reinfurt/theartreport.mysql
+# rsync -azP reinfurt@ica.art:/var/www/html/media/ /Library/WebServer/Documents/www.ica.local/media
+# rm /Users/reinfurt/theartreport.mysql
