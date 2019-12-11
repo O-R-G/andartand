@@ -43,7 +43,7 @@
                                 ?><a href="/calendar/<?= ($past) ? $program['url'] . '?past' : $program['url'] ?>">
                                     <div class="content-program-title <?= ($is_past) ? 'grey' : ''; ?>"><?
                                         echo date('m/j/y', strtotime($program['begin'])) . " " . $program['name1'];
-                                        echo $program['url'];
+                                        // echo $program['url'];
                                         // echo date('m/j/y', strtotime($program['end'])) . " " . $program['name1'];
                                         // echo $program['name1'];
                                     ?></div>
