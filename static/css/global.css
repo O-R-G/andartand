@@ -215,6 +215,21 @@ a {
     text-align: center;
     }
 
+#ads {
+    margin-top: 1em;
+}
+
+.ad {
+    display: block;
+    font-family: 'franklingothiccondensed', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 19px;    
+}
+
+.ad a:link, .ad a:visited {
+    color: #000;
+}
+
 .media {
   margin-top: 1em;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -248,12 +263,9 @@ a {
   top: 0;
   left: 0;
   z-index: 500;
-
   width: 100vw;
   height: 100vh;
-
   background-color: #fff;
-
   display: none;
 }
 
@@ -455,5 +467,120 @@ a {
     width: 75%;
     margin-bottom: 100em;
 }
+}
 
+/* animate */
+
+.fade {
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.fade-1 {
+    animation-name: fade-1;
+}
+
+.fade-2 {
+    animation-name: fade-2;
+}
+
+.fade-3 {
+    animation-name: fade-3;
+}
+
+.fade-4 {
+    animation-name: fade-4;
+}
+
+.fade-5 {
+    animation-name: fade-5;
+}
+
+.fade-6 {
+    animation-name: fade-6;
+}
+
+.fade-7 {
+    animation-name: fade-7;
+}
+
+.fade-8 {
+    animation-name: fade-8;
+}
+
+.fade-9 {
+    animation-name: fade-9;
+}
+
+.fade-10 {
+    animation-name: fade-10;
+}
+
+@keyframes fade-1 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    10% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-2 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    20% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-3 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    30% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-4 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    40% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-5 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-6 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-7 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-8 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-9 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-10 {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    100% {opacity: 1;}
 }

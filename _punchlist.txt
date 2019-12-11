@@ -56,6 +56,14 @@ Could you envision a possible way? -- add $past flag
 + D: On mobile, can we make the agenda column be the first thing to show 
 up?
 
++ B: Ads to possibly become HTML (?), and linkable. D, thought I had: 
+what if these were a stack of names that faded in, based on our money = 
+time policy. ? Visible for 3 second, and then invisible for some period 
+of time (10 seconds? Or whatever we decide. I imagine the invisible time 
+would be the same for all). See sketch* below. Tried to simulate a 
+frozen moment of ads fading in/out, ha, hope it communicates the idea. 
+Typeface/size TBD.
+
 / * In this sketch notice the accidental Helvetica on the HELEN MIRRA 
 entry, kind digging its and reminded me that I?m missing some of that 
 Helvetica that was use on the front page of the OG site?I did a little 
@@ -66,14 +74,6 @@ of site, as well as technically speaking.
 / Note to self: we may want to find a way to keep ?writing/text? active 
 on the front page. Or not? Time stamped is pretty nice, especially if we 
 have a good direct linking system in place.
-
-- B: Ads to possibly become HTML (?), and linkable. D, thought I had: 
-what if these were a stack of names that faded in, based on our money = 
-time policy. ? Visible for 3 second, and then invisible for some period 
-of time (10 seconds? Or whatever we decide. I imagine the invisible time 
-would be the same for all). See sketch* below. Tried to simulate a 
-frozen moment of ads fading in/out, ha, hope it communicates the idea. 
-Typeface/size TBD.
 
 - redirect http://andartand.org and https://andartand.org to 
 https://theartreport.org
