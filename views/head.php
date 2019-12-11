@@ -30,6 +30,7 @@ else {
 }
 
 $media = $oo->media($item['id']);
+$devhash = rand();
 ?>
 
 <html>
@@ -38,8 +39,8 @@ $media = $oo->media($item['id']);
         <title><?= date("m/j/y H:i:s"); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="/static/fonts/franklingothiccondensed/frankgotcon-webfont.css">
-		<link rel="stylesheet" href="/static/css/global.css">
+		<link rel="stylesheet" href="/static/fonts/franklingothiccondensed/frankgotcon-webfont.css?v=<? echo $devhash; ?>">
+		<link rel="stylesheet" href="/static/css/global.css?v=<? echo $devhash; ?>">
 		<link rel="apple-touch-icon" href="<? echo $host; ?>media/png/touchicon.png" />
 		<script src="static/js/analytics.js"></script>
 	</head>
