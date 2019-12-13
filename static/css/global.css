@@ -164,6 +164,7 @@ a {
 }
 
 .content #menu {
+    margin-bottom: 1em;
 }
 
 .content .page-title::before { 

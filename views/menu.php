@@ -9,7 +9,7 @@
         <div id="header-mobile"><?
             $home_id = 1;
             $home = $oo->get($home_id);
-            echo $home['deck']; 
+            // echo $home['deck']; 
         ?></div>
         <div id="menu"><?
             $root_id = 0;
@@ -28,7 +28,7 @@
                 }
             }
         ?></div><?
-        echo "<br/>Supported by ...";
+        echo "Supported by ...";
 	    require_once("views/menu-ad.php");
     ?></div>
 </div>
