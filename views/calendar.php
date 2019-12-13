@@ -25,7 +25,7 @@
 <div class="asterisks">
     * * *<br /><? 
     date_default_timezone_set("America/Los_Angeles");
-    echo date("m/j/y H:i:s");
+    // echo date("m/j/y H:i:s");
 ?></div>
 
 <div id="right" class="container">
